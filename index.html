@@ -16,6 +16,8 @@
 
         <nav>
 
+            <div class="burger"></div>
+
             <ul>
                 <li><a href="#">Акции</a></li>
                 <li><a href="#">Сведения об ОО</a></li>
@@ -31,33 +33,31 @@
             <a href="#" class="logo"></a>
 
             <div class="header-contacts">
-                <div>Москва, ул. Вильгельма Пика, дом 4</div>
-                <a href="tel:88005556375">88005556375</a>
+                <p>Москва, ул. Вильгельма Пика, дом 4</p>
+                <a href="tel:88005556375">8 <span>(800)</span> 555-63-75</a>
             </div>
 
             <a href="#" class="account-link">Личный кабинет</a>
 
-            <div class="header-nav">
-                <ul>
-                    <li>
-                        <p>Обучающие курсы</p>
-                        <ul>
-                            <li><a href="#">Дошкольное образование</a></li>
-                            <li><a href="#">Средняя школа</a></li>
-                            <li><a href="#">Старшая школа</a></li>
-                            <li><a href="#">Колледжи</a></li>
-                            <li><a href="#">Система дополнительного образования</a></li>
-                            <li><a href="#">Классное руководство</a></li>
-                        </ul>
-                    </li>
-                    <li>Обучающимся</li>
-                    <li>Преподаватели</li>
-                </ul>
-            </div>
+            <ul class="header-nav">
+                <li>
+                    <p>Обучающие курсы</p>
+                    <ul>
+                        <li><a href="#">Дошкольное образование</a></li>
+                        <li><a href="#">Средняя школа</a></li>
+                        <li><a href="#">Старшая школа</a></li>
+                        <li><a href="#">Колледжи</a></li>
+                        <li><a href="#">Система дополнительного образования</a></li>
+                        <li><a href="#">Классное руководство</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Обучающимся</a></li>
+                <li><a href="#">Преподаватели</a></li>
+            </ul>
 
             <form action="#" class="form-search">
-                <input type="text" id="field-search" class="field-search" placeholder="Поиск по сайту">
-                <label for="field-search"></label>
+                <label><input type="text" class="field-search" placeholder="Поиск по сайту"></label>
+                <button type="submit"></button>
             </form>
 
         </div>
@@ -66,30 +66,34 @@
 
     <section class="banners">
 
-        <div class="banner">
+        <div class="small-banners">
 
-            <img src="source/content/banner-1.png" alt="">
+            <div class="banner banner-text">
 
-            <a href="#">Подробнее</a>
+                <img src="source/content/banner-1.png" alt="">
 
-            <div class="text">
-                <p class="title">Обучение со скидкой</p>
-                <p>
-                    В честь начала нового года скидка на курс обучения математике до 50%
-                </p>
-                <p class="date">Начало: 01.01.2017</p>
-                <p class="date">Окончание: 14.01.2017</p>
+                <a href="#">Подробнее</a>
+
+                <div class="text">
+                    <p class="title">Обучение со скидкой</p>
+                    <p>
+                        В честь начала нового года скидка на курс обучения математике до 50%
+                    </p>
+                    <p class="date">Начало: 01.01.2017</p>
+                    <p class="date">Окончание: 14.01.2017</p>
+                </div>
+
             </div>
 
-        </div>
+            <div class="banner">
 
-        <div class="banner">
+                <img src="source/content/banner-2.png" alt="">
 
-            <img src="source/content/banner-2.png" alt="">
+                <a href="#">Подробнее</a>
 
-            <a href="#">Подробнее</a>
+                <h3>Корпоративное обучение</h3>
 
-            <h3>Корпоративное обучение</h3>
+            </div>
 
         </div>
 
@@ -130,10 +134,10 @@
         <div class="slider-courses">
 
             <div class="slide">
-                <div class="image-wrap">
+                <div class="course-header">
                     <img src="source/content/image-course-1.png" alt="">
+                    <div class="course-name">Психолого-педагогическая культура воспитателя</div>
                 </div>
-                <div class="course-name">Психолого-педагогическая культура воспитателя</div>
                 <ul>
                     <li>Система дополнительного образования</li>
                     <li>Стоимость: <span>10 000</span> руб.</li>
@@ -143,10 +147,10 @@
             </div>
 
             <div class="slide">
-                <div class="image-wrap">
-                    <img src="source/content/image-course-1.png" alt="">
+                <div class="course-header">
+                    <img src="source/content/image-course-2.png" alt="">
+                    <div class="course-name">Методическая компетентность воспитателя</div>
                 </div>
-                <div class="course-name">Методическая компетентность воспитателя</div>
                 <ul>
                     <li>Система дополнительного образования</li>
                     <li>Стоимость: <span>10 000</span> руб.</li>
@@ -156,10 +160,10 @@
             </div>
 
             <div class="slide">
-                <div class="image-wrap">
-                    <img src="source/content/image-course-1.png" alt="">
+                <div class="course-header">
+                    <img src="source/content/image-course-3.png" alt="">
+                    <div class="course-name">Психолого-педагогическая культура учителей 1-4 классов</div>
                 </div>
-                <div class="course-name">Психолого-педагогическая культура учителей 1-4 классов</div>
                 <ul>
                     <li>Система дополнительного образования</li>
                     <li>Стоимость: <span>10 000</span> руб.</li>
@@ -169,10 +173,62 @@
             </div>
 
             <div class="slide">
-                <div class="image-wrap">
-                    <img src="source/content/image-course-1.png" alt="">
+                <div class="course-header">
+                    <img src="source/content/image-course-4.png" alt="">
+                    <div class="course-name">Воспитание дошкольников</div>
                 </div>
-                <div class="course-name">Воспитание дошкольников</div>
+                <ul>
+                    <li>Система дополнительного образования</li>
+                    <li>Стоимость: <span>10 000</span> руб.</li>
+                    <li>Длительность: <span>1</span> день</li>
+                </ul>
+                <button>Записаться</button>
+            </div>
+
+            <div class="slide">
+                <div class="course-header">
+                    <img src="source/content/image-course-1.png" alt="">
+                    <div class="course-name">Психолого-педагогическая культура воспитателя</div>
+                </div>
+                <ul>
+                    <li>Система дополнительного образования</li>
+                    <li>Стоимость: <span>10 000</span> руб.</li>
+                    <li>Длительность: <span>1</span> день</li>
+                </ul>
+                <button>Записаться</button>
+            </div>
+
+            <div class="slide">
+                <div class="course-header">
+                    <img src="source/content/image-course-1.png" alt="">
+                    <div class="course-name">Методическая компетентность воспитателя</div>
+                </div>
+                <ul>
+                    <li>Система дополнительного образования</li>
+                    <li>Стоимость: <span>10 000</span> руб.</li>
+                    <li>Длительность: <span>1</span> день</li>
+                </ul>
+                <button>Записаться</button>
+            </div>
+
+            <div class="slide">
+                <div class="course-header">
+                    <img src="source/content/image-course-1.png" alt="">
+                    <div class="course-name">Психолого-педагогическая культура учителей 1-4 классов</div>
+                </div>
+                <ul>
+                    <li>Система дополнительного образования</li>
+                    <li>Стоимость: <span>10 000</span> руб.</li>
+                    <li>Длительность: <span>1</span> день</li>
+                </ul>
+                <button>Записаться</button>
+            </div>
+
+            <div class="slide">
+                <div class="course-header">
+                    <img src="source/content/image-course-1.png" alt="">
+                    <div class="course-name">Воспитание дошкольников</div>
+                </div>
                 <ul>
                     <li>Система дополнительного образования</li>
                     <li>Стоимость: <span>10 000</span> руб.</li>
@@ -205,7 +261,7 @@
 
             <li>
                 <div class="image-wrap">
-                    <img src="source/content/image-advantages-1.png" alt="">
+                    <img src="source/content/image-advantages-2.png" alt="">
                 </div>
                 <h4>Опытные преподаватели</h4>
                 <p>
@@ -215,9 +271,9 @@
 
             <li>
                 <div class="image-wrap">
-                    <img src="source/content/image-advantages-1.png" alt="">
+                    <img src="source/content/image-advantages-3.png" alt="">
                 </div>
-                <h4>Доступные цены</h4>
+                <h4>Доступные<br>цены</h4>
                 <p>
                     Обменяйте действующую бонусную карту, сертификат или любой документ, удостоверяющий ваше обучение в любой бизнес-школе, тренинговом центре, и получите карту «Партнер» от Moscow School!
                 </p>
@@ -231,11 +287,13 @@
 
     <section class="news">
 
+        <h2>Новости</h2>
+
         <ul>
 
             <li>
                 <a href="#" class="image-wrap">
-                    <img src="source/content/image-advantages-1.png" alt="">
+                    <img src="source/content/image-course-1.png" alt="">
                 </a>
                 <a href="#">Госдума приняла в I чтении законопроект о единой системе учета обучающихся</a>
                 <div class="date">06.05.2015</div>
@@ -243,7 +301,7 @@
 
             <li>
                 <a href="#" class="image-wrap">
-                    <img src="source/content/image-advantages-1.png" alt="">
+                    <img src="source/content/image-course-1.png" alt="">
                 </a>
                 <a href="#">Госдума приняла в I чтении законопроект о единой системе учета обучающихся</a>
                 <div class="date">06.05.2015</div>
@@ -251,7 +309,7 @@
 
             <li>
                 <a href="#" class="image-wrap">
-                    <img src="source/content/image-advantages-1.png" alt="">
+                    <img src="source/content/image-course-1.png" alt="">
                 </a>
                 <a href="#">Госдума приняла в I чтении законопроект о единой системе учета обучающихся</a>
                 <div class="date">06.05.2015</div>
@@ -259,7 +317,7 @@
 
             <li>
                 <a href="#" class="image-wrap">
-                    <img src="source/content/image-advantages-1.png" alt="">
+                    <img src="source/content/image-course-1.png" alt="">
                 </a>
                 <a href="#">Госдума приняла в I чтении законопроект о единой системе учета обучающихся</a>
                 <div class="date">06.05.2015</div>
@@ -290,7 +348,7 @@
         </div>
 
         <div class="question">
-            <p class="title">Добрый день</p>
+            <div class="title">Добрый день</div>
             <p>
                 Обменяйте действующую бонусную карту, сертификат или любой документ, удостоверяющий ваше обучение в любой бизнес-школе, тренинговом центре, и получите карту «Партнер» от Moscow School!
             </p>
@@ -327,23 +385,26 @@
         </div>
 
         <div class="footer-contacts">
-            <h4></h4>
+            <h4>Контакты</h4>
             <p>Москва,<br>ул. Вильгельма Пика, дом 4</p>
             <p>тел.: <a href="tel:88005556375">8 (800) 555-63-75</a></p>
             <p>факс: <a href="tel:+74956627882">+7 (495) 662-78-82</a></p>
         </div>
 
-        <form action="#" class="form-mailing">
+        <div class="form-wrap">
             <h4>Рассылка</h4>
             <p>Подпишитесь на рассылку новостей</p>
-            <label>
-                <input type="text" placeholder="Введите свой e-mail">
-            </label>
-            <p class="copyrights">
+            <form action="#" class="form-mailing">
+                <label>
+                    <input type="text" placeholder="Введите свой e-mail">
+                </label>
+                <button type="submit">ок</button>
+            </form>
+            <div class="copyrights">
                 "Российский государственный социальный университет".<br>
                 Все права защищены
-            </p>
-        </form>
+            </div>
+        </div>
 
     </footer>
 
