@@ -4,6 +4,17 @@ $(document).ready(function () {
      ******* other scripts ********
      ******************************/
 
+    $(document).click(function() {
+
+        $target = $(event.target);
+
+        if (!$target.closest($('.custom-select')).length){
+            $('.custom-select').removeClass('active');
+            $('.custom-select ul').fadeOut(200);
+        }
+
+    });
+
     $('.header-nav > li').hover(
         function() {
             if ($(window).width() > '980'){
@@ -31,6 +42,27 @@ $(document).ready(function () {
         $(this).siblings('ul').slideToggle();
     });
 
+    $('.current-value').click(function() {
+        if ($(this).parent().hasClass('active')) {
+            $(this).parent().removeClass('active');
+            $(this).siblings('ul').slideUp();
+        } else {
+            $('.custom-select').removeClass('active');
+            $(this).parent().addClass('active');
+            $('.custom-select').find('ul').fadeOut(200);
+            $(this).siblings('ul').slideDown();
+        }
+    });
+    
+    $('.custom-select ul li').click(function() {
+
+        $(this).parent().fadeOut(200);
+        $(this).parents('.custom-select').removeClass('active');
+        var value = $(this).html();
+        $(this).parent().siblings('.current-value').html(value);
+        $(this).parents('.custom-select').find('input').val(value);
+
+    });
 
     /******************************
      ******* slider scripts *******

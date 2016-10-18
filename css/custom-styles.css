@@ -8,6 +8,11 @@
     src: url("../source/fonts/Verdana-Bold.woff") format("woff"), url("../source/fonts/Verdana-Bold.ttf") format("truetype");
     font-weight: 300;
 }
+@font-face {
+    font-family: 'Calibri';
+    src: url("../source/fonts/Calibri.woff") format("woff"), url("../source/fonts/Calibri.ttf") format("truetype");
+    font-weight: 300;
+}
 
 /******************************
 ********** general ************
@@ -27,6 +32,10 @@
 html, body {
     background-color: #e2e3e5;
     width: 100%;
+}
+
+main {
+    display: block;
 }
 
 a, button {
@@ -149,6 +158,7 @@ input:focus::-webkit-input-placeholder {color: transparent;}
 input:focus::-moz-placeholder {color: transparent;}
 input:focus:-moz-placeholder {color: transparent;}
 input:focus:-ms-input-placeholder {color: transparent;}
+
 
 /******************************
 *********** header ************
@@ -366,6 +376,86 @@ nav ul li a:hover {
     top: 1px;
     border: none;
 }
+
+/******************************
+*********** footer ************
+******************************/
+
+footer[role='contentinfo'] {
+    background: #3888c2;
+    padding: 20px 40px 30px;
+}
+footer h4 {
+    font-family: 'Verdana Bold', sans-serif;
+    font-size: 1.142857142857143em;
+    color: #fefefe;
+    margin-bottom: 10px;
+}
+.footer-links, .footer-contacts, footer .form-wrap {
+    display: block;
+    width: 25%;
+    float: left;
+}
+.footer-links li {
+    display: block;
+    margin-bottom: 3px;
+}
+.footer-links li a {
+    color: #fefefe;
+}
+.footer-links li a:hover {
+    text-decoration: none;
+}
+.footer-contacts p, .footer-contacts a {
+    color: #fefefe;
+    line-height: 1.5;
+}
+.footer-contacts a {
+    text-decoration: none;
+}
+.footer-contacts a:hover {
+    text-decoration: underline;
+}
+
+.form-mailing {
+    display: block;
+    margin: 15px 0;
+    position: relative;
+    background: #fefefe;
+}
+.form-mailing input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 0 95px 0 15px;
+}
+.form-mailing button {
+    display: block;
+    width: 80px;
+    height: 28px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-family: 'Verdana Bold', sans-serif;
+}
+.form-wrap p {
+    color: #fefefe;
+}
+.copyrights {
+    color: #fefefe;
+    padding-left: 20px;
+    position: relative;
+}
+.copyrights:before {
+    content: '\a9';
+    position: absolute;
+    left: 0;
+}
+
+/*************************************************************************************************
+************************************** PAGE MAIN *************************************************
+*************************************************************************************************/
 
 /******************************
 ********** banners ************
@@ -713,82 +803,191 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
+/*************************************************************************************************
+********************************* PAGE REGISTRATION **********************************************
+*************************************************************************************************/
 
-
-/******************************
-*********** footer ************
-******************************/
-
-footer[role='contentinfo'] {
-    background: #3888c2;
-    padding: 20px 40px 30px;
+.page-registration main {
+    padding: 30px 50px;
 }
-footer h4 {
-    font-family: 'Verdana Bold', sans-serif;
-    font-size: 1.142857142857143em;
-    color: #fefefe;
-    margin-bottom: 10px;
+.page-registration h1 {
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.928571428571429em;
+    text-align: right;
+    padding-right: 8%;
+    margin-bottom: 30px;
 }
-.footer-links, .footer-contacts, footer .form-wrap {
-    display: block;
+
+.participants {
+    display: inline-block;
+    vertical-align: top;
     width: 25%;
-    float: left;
 }
-.footer-links li {
-    display: block;
-    margin-bottom: 3px;
-}
-.footer-links li a {
-    color: #fefefe;
-}
-.footer-links li a:hover {
-    text-decoration: none;
-}
-.footer-contacts p, .footer-contacts a {
-    color: #fefefe;
-    line-height: 1.5;
-}
-.footer-contacts a {
-    text-decoration: none;
-}
-.footer-contacts a:hover {
-    text-decoration: underline;
+.participants li {
+    margin-bottom: 50px;
+    width: 152px;
 }
 
-.form-mailing {
-    display: block;
-    margin: 15px 0;
-    position: relative;
-    background: #fefefe;
+.form-registration {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    text-align: right;
 }
-.form-mailing input {
+.form-registration fieldset {
+    display: block;
+    border: none;
+    background: #ebecec;
+    padding: 30px 7.5%;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.page-registration .title {
+    height: 60px;
+    background: #3467a0;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding-left: 8%;
+    line-height: 60px;
+    text-align: left;
+}
+
+.custom-select {
     display: block;
     width: 100%;
-    height: 30px;
-    border: none;
-    padding: 0 95px 0 15px;
-}
-.form-mailing button {
-    display: block;
-    width: 80px;
-    height: 28px;
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    font-family: 'Verdana Bold', sans-serif;
-}
-.form-wrap p {
-    color: #fefefe;
-}
-.copyrights {
-    color: #fefefe;
-    padding-left: 20px;
     position: relative;
+    background: #ffffff;
+    margin-bottom: 15px;
+    height: 35px;
 }
-.copyrights:before {
-    content: '\a9';
+.custom-select .current-value {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 60px 0 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 1.285714285714286em;
+    color: #727271;
+    border: 1px solid #a1a2a2;
     position: absolute;
     left: 0;
+    right: 0;
+}
+.custom-select .current-value:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #3467a0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 22px;
+    margin: auto;
+}
+.custom-select.active .current-value:after {
+    border-top: none;
+    border-bottom: 8px solid #3467a0;
+}
+
+.custom-select input, .custom-checkbox {
+    display: none;
+}
+
+.custom-select ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 1;
+    background: #ffffff;
+    width: 100%;
+    border: 1px solid #a1a2a2;
+    border-top: none;
+    padding: 10px 0;
+}
+.custom-select ul li {
+    display: block;
+    font-size: 1.1em;
+    color: #727271;
+    padding-left: 25px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.custom-select ul li:hover {
+    color: #3467a0;
+    font-weight: 600;
+}
+
+.custom-checkbox-label {
+    display: block;
+    font-size: 1.285714285714286em;
+    color: #727271;
+    position: relative;
+    padding-left: 40px;
+}
+.custom-checkbox-label:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #a1a2a2;
+    background: #ffffff;
+    margin-right: 25px;
+    cursor: pointer;
+    color: #3467a0;
+    text-align: center;
+    line-height: 23px;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.custom-checkbox:checked + .custom-checkbox-label:before {
+    content: '\2713';
+}
+
+.person label {
+    display: block;
+    margin-bottom: 15px;
+}
+.person label:last-of-type {
+    margin-bottom: 0;
+}
+.person input {
+    font-size: 1.285714285714286em;
+    color: #727271;
+    border: 1px solid #a1a2a2;
+    padding: 0 25px;
+    height: 35px;
+    width: 100%;
+}
+.person input::-webkit-input-placeholder {color: rgba(114, 114, 113, 1);}
+.person input::-moz-placeholder {color: rgba(114, 114, 113, 1);}
+.person input:-moz-placeholder {color: rgba(114, 114, 113, 1);}
+.person input:-ms-input-placeholder {color: rgba(114, 114, 113, 1);}
+.person input:focus::-webkit-input-placeholder {color: transparent;}
+.person input:focus::-moz-placeholder {color: transparent;}
+.person input:focus:-moz-placeholder {color: transparent;}
+.person input:focus:-ms-input-placeholder {color: transparent;}
+
+.form-registration button[type='submit'] {
+    color: #ffffff;
+    background: #3467a0;
+    font-size: 1.5em;
+    text-transform: lowercase;
+    padding: 10px 35px;
+    line-height: 1;
 }
 
 /******************************
@@ -979,6 +1178,17 @@ footer h4 {
     .slider-banner .text {
         display: none;
     }
+    .participants, .form-registration {
+        width: 100%;
+    }
+    .page-registration main {
+        padding: 30px 20px;
+    }
+    .participants li {
+        width: 30%;
+        max-width: 152px;
+    }
+
 }
 
 @media (max-width: 480px) {
