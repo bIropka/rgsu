@@ -816,6 +816,7 @@ footer h4 {
     text-align: right;
     padding-right: 8%;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 .page-registration .title, .page-profile .title {
     height: 60px;
@@ -870,7 +871,7 @@ footer h4 {
     text-overflow: ellipsis;
     overflow: hidden;
     cursor: pointer;
-    font-size: 1.285714285714286em;
+    font-size: 1.15em;
     color: #727271;
     border: 1px solid #a1a2a2;
     position: absolute;
@@ -914,7 +915,6 @@ footer h4 {
 }
 .custom-select ul li {
     display: block;
-    font-size: 1.1em;
     color: #727271;
     padding-left: 25px;
     height: 25px;
@@ -931,7 +931,7 @@ footer h4 {
 
 .custom-checkbox-label {
     display: block;
-    font-size: 1.285714285714286em;
+    font-size: 1.15em;
     color: #727271;
     position: relative;
     padding-left: 40px;
@@ -965,7 +965,7 @@ footer h4 {
     margin-bottom: 0;
 }
 .person input {
-    font-size: 1.285714285714286em;
+    font-size: 1.15em;
     color: #727271;
     border: 1px solid #a1a2a2;
     padding: 0 25px;
@@ -1055,6 +1055,14 @@ footer h4 {
 .user-money .money-value {
     color: #ffffff;
 }
+.user-money .money-value span {
+    font-size: 1.4em;
+    font-family: 'Verdana Bold', sans-serif;
+    color: #ffffff;
+}
+.to-edit a {
+    font-size: inherit;
+}
 
 
 .profile {
@@ -1085,7 +1093,7 @@ footer h4 {
     border-left: none;
 }
 .profile-item .sub-title {
-    font-size: 1.15em;
+    font-size: 1.05em;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
